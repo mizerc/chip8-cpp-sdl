@@ -13,12 +13,14 @@ Once compiled and linked, you can run the emulator using the following command s
 | <img src="screenshots/ss3.png" width="350"> |            |
 
 
-# Extra: If using GCC to compile and link
+# Environment
+
+## If using GCC to compile and link
 
 You need to inform `gcc` where to look for header files with the `-I` flag, and where to look for the compiled libraries with `-L` flag.
 Specific for SDL2, you can get both using the `sdl2-config` like for example `gcc ./src/*.c 'sdl2-config --libs --cflags' -Wall -lm -o build/app`.
 
-# Extra: If using VSCode as IDE
+## If using VSCode as IDE
 
 You may need to create/update the file `./vscode/c_cpp_properties.json` at the root of your project to inform the VSCode where to look for SDL2 include files with the `includePath` property:
 
@@ -27,7 +29,7 @@ You may need to create/update the file `./vscode/c_cpp_properties.json` at the r
 
 With that, your IDE should not complain about missing includes when using `#include <SDL.h>`.
 
-# Extra: Installing SDL2 on MacOS
+## Installing SDL2 on MacOS
 
 - `brew install sdl2`
 - `sdl2-config --version`: 2.26.1
