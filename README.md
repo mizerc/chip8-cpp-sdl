@@ -4,7 +4,7 @@ This is an implementation of the CHIP-8 emulator using C++17, SDL2 (2D Texture) 
 
 # Usage
 
-- Structure: `./build/chip8 <cyclesPerFrame> <frameDurationTargetMs> <pixelScale> <ROM_filepath>`
+Once compiled and linked, you can run the emulator using the following command structure: `./build/chip8 <cyclesPerFrame> <frameDurationTargetMs> <pixelScale> <ROM_filepath>`.
 - Example: `./build/chip8 10 16 10 ./roms/Tetris_Fran_Dachille_1991.ch8`
 
 |  |  |
@@ -13,19 +13,19 @@ This is an implementation of the CHIP-8 emulator using C++17, SDL2 (2D Texture) 
 | <img src="screenshots/ss3.png" width="350"> |            |
 
 
-# If using GCC to compile and link
+# Extra: If using GCC to compile and link
 
 You need to inform `gcc` where to look for header files with the `-I` flag, and where to look for the compiled libraries with `-L` flag.
 Specific for SDL2, you can get both using the `sdl2-config` like for example `gcc ./src/*.c 'sdl2-config --libs --cflags' -Wall -lm -o build/app`.
 
-# If using VSCode as IDE
+# Extra: If using VSCode as IDE
 
-You need to create/update the file `./vscode/c_cpp_properties.json` at the root of your project to inform the VSCode where to look for include files with the includePath property:
+You may need to create/update the file `./vscode/c_cpp_properties.json` at the root of your project to inform the VSCode where to look for SDL2 include files with the `includePath` property:
 
 - `"includePath": ["${workspaceFolder}/**", "/usr/local/include/SDL2"],`
 - `"includePath": ["${workspaceFolder}/**", "/opt/homebrew/include/SDL2"]`
 
-Then your IDE should not complain about missing includes when using `#include <SDL.h>`.
+With that, your IDE should not complain about missing includes when using `#include <SDL.h>`.
 
 # Extra: Installing SDL2 on MacOS
 
