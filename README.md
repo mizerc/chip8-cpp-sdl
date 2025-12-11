@@ -4,8 +4,8 @@ This is an implementation of the CHIP-8 emulator using C++17, SDL2 (2D Texture) 
 
 # Usage
 
-- `./build/chip8 <cyclesPerFrame> <frameDurationTargetMs> <pixelScale> <ROM>`
-- ./build/chip8 10 16 10 ./roms/Tetris_Fran_Dachille_1991.ch8
+- Structure: `./build/chip8 <cyclesPerFrame> <frameDurationTargetMs> <pixelScale> <ROM>`
+- Example: `./build/chip8 10 16 10 ./roms/Tetris_Fran_Dachille_1991.ch8`
 
 |  |  |
 |------------|------------|
