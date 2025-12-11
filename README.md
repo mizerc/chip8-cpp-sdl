@@ -27,7 +27,7 @@ This is an implementation of the CHIP-8 emulator using C++17, SDL2 (2D Texture) 
 # If using GCC to compile and link
 
 You need to inform `gcc` where to look for header files with the `-I` flag, and where to look for the compiled libraries with `-L` flag.
-You can get both using the `sdl2-config` like for example `gcc ./src/*.c 'sdl2-config --libs --cflags' -Wall -lm -o build/app`.
+Specific for SDL2, you can get both using the `sdl2-config` like for example `gcc ./src/*.c 'sdl2-config --libs --cflags' -Wall -lm -o build/app`.
 
 # If using VSCode as IDE
 
