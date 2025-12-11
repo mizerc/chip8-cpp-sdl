@@ -9,11 +9,16 @@ Once compiled and linked, you can run the emulator using the following command s
 
 # Screenshots
 
-|  |  |
-|------------|------------|
-| <img src="screenshots/ss1.png" width="350"> | <img src="screenshots/ss2.png" width="350"> |
-| <img src="screenshots/ss3.png" width="350"> |            |
-
+<table>
+  <tr>
+    <td><img src="screenshots/ss1.png" width="350"></td>
+    <td><img src="screenshots/ss2.png" width="350"></td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/ss3.png" width="350"></td>
+    <td></td>
+  </tr>
+</table>
 
 # Environment
 
