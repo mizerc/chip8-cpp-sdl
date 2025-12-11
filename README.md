@@ -13,17 +13,6 @@ This is an implementation of the CHIP-8 emulator using C++17, SDL2 (2D Texture) 
 | <img src="screenshots/ss3.png" width="350"> |            |
 
 
-
-# Installing SDL2 on MacOS
-
-- `brew install sdl2`
-- `sdl2-config --version`
-- `2.26.1`
-- `sdl2-config --cflags`
-- `-I/usr/local/include/SDL2 -D_THREAD_SAFE`
-- `sdl2-config --libs`
-- `-L/usr/local/lib -lSDL2`
-
 # If using GCC to compile and link
 
 You need to inform `gcc` where to look for header files with the `-I` flag, and where to look for the compiled libraries with `-L` flag.
@@ -37,3 +26,10 @@ You need to create/update the file `./vscode/c_cpp_properties.json` at the root 
 - `"includePath": ["${workspaceFolder}/**", "/opt/homebrew/include/SDL2"]`
 
 Then your IDE should not complain about missing includes when using `#include <SDL.h>`.
+
+# Extra: Installing SDL2 on MacOS
+
+- `brew install sdl2`
+- `sdl2-config --version`: 2.26.1
+- `sdl2-config --cflags`: -I/usr/local/include/SDL2 -D_THREAD_SAFE
+- `sdl2-config --libs`: -L/usr/local/lib -lSDL2
