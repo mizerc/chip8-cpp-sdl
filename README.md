@@ -7,6 +7,8 @@ This is an implementation of the CHIP-8 emulator using C++17, SDL2 (2D Texture) 
 Once compiled and linked, you can run the emulator using the following command structure: `./build/chip8 <cyclesPerFrame> <frameDurationTargetMs> <pixelScale> <ROM_filepath>`.
 - Example: `./build/chip8 10 16 10 ./roms/Tetris_Fran_Dachille_1991.ch8`
 
+# Screenshots
+
 |  |  |
 |------------|------------|
 | <img src="screenshots/ss1.png" width="350"> | <img src="screenshots/ss2.png" width="350"> |
